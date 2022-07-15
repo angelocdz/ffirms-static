@@ -1,0 +1,9 @@
+{
+  "homepage": "https://angelocdz.github.io/ffirms-s",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
