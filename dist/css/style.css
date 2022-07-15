@@ -347,6 +347,7 @@ img {
 
 /* Hero */
 .hero {
+  text-align: center;
   position: relative;
   height: 65vh;
   width: 100%;
@@ -546,11 +547,20 @@ img {
 /* Affirmation images */
 .images .image-box{
   position: relative;
+  /*
   height: 300px;
   width: 210px;
+  */
+  height: 150px;
+  width: 96px;
   border-radius: 6px;
   overflow: hidden;
 }
+
+.images__container {
+  padding: 0px 13rem;
+}
+
 .images{
   width: 100%;
   display: flex;
@@ -644,6 +654,11 @@ img {
 @media screen and (max-width: 768px) {
   .section {
     padding: 7rem 1rem;
+  }
+
+  .images .image-box{
+    max-height: 120px;
+    max-width: 79px;
   }
 
   .affirmation-bottom {

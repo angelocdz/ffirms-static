@@ -1,5 +1,5 @@
 {
-  "homepage": "https://angelocdz.github.io/ffirms-s",
+  "homepage": "https://angelocdz.github.io/ffirms-static",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
