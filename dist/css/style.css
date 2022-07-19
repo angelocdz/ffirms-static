@@ -358,6 +358,7 @@ img {
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center center;
+  padding: 26rem 2rem;
 }
 
 .hero__container {
@@ -367,7 +368,7 @@ img {
 }
 
 .hero__title {
-  margin-top: 3em;
+/*  margin-top: 3em;*/
   text-align: center;
   font-size: var(--big-font);
   color: var(--white-color);
@@ -381,10 +382,10 @@ img {
 
 /* IMAGES */
 .images {
-  padding: 3rem 1rem;
+  padding: 6rem 1rem;
 }
 .images__title {
-  font-size: var(--h1-font);
+  font-size: var(--h2-font);
 }
 
 
@@ -677,12 +678,16 @@ img {
     height: 4rem;
   }
 
+  .hero {
+    padding: 13rem 1rem;
+  }
+
   .hero__title {
-    margin-top: 2em;
+   /* margin-top: 2em;*/
   }
 
   .images {
-    padding: 1rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .images__container .image-box{
