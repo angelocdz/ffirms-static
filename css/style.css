@@ -111,6 +111,7 @@ a {
   padding: 7rem 2rem;
 }
 
+/* center */
 .text-center {
   text-align: center;
 }
@@ -366,7 +367,7 @@ img {
 }
 
 .hero__title {
-  margin-top: 4em;
+  margin-top: 3em;
   text-align: center;
   font-size: var(--big-font);
   color: var(--white-color);
@@ -376,6 +377,14 @@ img {
 .hero__btn {
   font-size: var(--h4-font);
   font-weight: var(--font-semi-bold);
+}
+
+/* IMAGES */
+.images {
+  padding: 3rem 1rem;
+}
+.images__title {
+  font-size: var(--h1-font);
 }
 
 
@@ -547,7 +556,7 @@ img {
 
 
 /* Affirmation images */
-.images .image-box{
+.images__container .image-box{
   position: relative;
   /*
   height: 300px;
@@ -563,16 +572,16 @@ img {
   padding: 0px 13rem;
 }
 
-.images{
+.images__container {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.images .image-box{
+.images__container .image-box{
   margin: 8px;
 }
-.images .image-box a img{
+.images__container .image-box a img{
   height: 100%;
   width: 100%;
   border-radius: 6px;
@@ -668,7 +677,15 @@ img {
     height: 4rem;
   }
 
-  .images .image-box{
+  .hero__title {
+    margin-top: 2em;
+  }
+
+  .images {
+    padding: 1rem 1rem;
+  }
+
+  .images__container .image-box{
     max-height: 120px;
     max-width: 79px;
   }
@@ -704,10 +721,6 @@ img {
 
 
   /* Hero */
-  .hero__title {
-    font-size: 3rem;
-    margin-top: 6em;
-  }
 
   .hero__btn {
     /*
