@@ -358,7 +358,7 @@ img {
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center center;
-  padding: 26rem 2rem;
+  padding: 20rem 2rem;
 }
 
 .hero__container {
@@ -378,14 +378,17 @@ img {
 .hero__btn {
   font-size: var(--h4-font);
   font-weight: var(--font-semi-bold);
+  margin-bottom: 3em;
 }
 
 /* IMAGES */
 .images {
-  padding: 6rem 1rem;
+/*  padding: 6rem 1rem;*/
 }
+
 .images__title {
-  font-size: var(--h2-font);
+  font-size: var(--h1-font);
+  margin-top: 2em;
 }
 
 
@@ -687,7 +690,7 @@ img {
   }
 
   .images {
-    padding: 3rem 1rem;
+/*    padding: 3rem 1rem;*/
   }
 
   .images__container .image-box{
