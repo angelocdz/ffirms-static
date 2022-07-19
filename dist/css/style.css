@@ -1,6 +1,3 @@
-/* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 html {
   font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
@@ -11,7 +8,8 @@ html {
 /* Font Sizes & Family */
 /* if we set html's font size 62.5% then 1rem = 10px */
 
---body-font: 'Poppins', sans-serif;
+/*--body-font: 'Poppins', sans-serif;*/
+--body-font: 'Merriweather', serif;
 
 --big-font: 6rem;
 --h1-font: 3.6rem;
@@ -358,7 +356,8 @@ img {
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center center;
-  padding: 20rem 2rem;
+  padding: 26rem 2rem;
+  object-fit: cover;
 }
 
 .hero__container {
@@ -368,27 +367,31 @@ img {
 }
 
 .hero__title {
-/*  margin-top: 3em;*/
   text-align: center;
-  font-size: var(--big-font);
   color: var(--white-color);
-  font-weight: var(--font-regular);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 4.5rem;
 }
 
 .hero__btn {
-  font-size: var(--h4-font);
-  font-weight: var(--font-semi-bold);
-  margin-bottom: 3em;
+  font-size: var(--h2-font);
+  font-weight: 700;
+  margin-bottom: 2em;
+  font-size: 2rem;
 }
 
 /* IMAGES */
-.images {
-/*  padding: 6rem 1rem;*/
+.images__title {
+  font-size: 4rem;
+  margin-top: 2rem;
 }
 
-.images__title {
-  font-size: var(--h1-font);
-  margin-top: 2em;
+.images__txt {
+  font-family: Arial, sans-serif;
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -559,41 +562,35 @@ img {
 }
 
 
-/* Affirmation images */
-.images__container .image-box{
-  position: relative;
-  /*
-  height: 300px;
-  width: 210px;
-  */
-  max-height: 230px;
-  max-width: 160px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.images__container {
-  padding: 0px 13rem;
-}
-
+/* IMAGES */
 .images__container {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 4rem 13rem;
 }
+
 .images__container .image-box{
+  position: relative;
+  max-height: 230px;
+  max-width: 160px;
+  border-radius: 6px;
+  overflow: hidden;
   margin: 8px;
 }
+
 .images__container .image-box a img{
   height: 100%;
   width: 100%;
   border-radius: 6px;
   transition: transform 0.2s linear;
 }
+
 .image-box:hover a img{
   transform: scale(1.05);
 }
+
 /* Affirmation */
 .affirmation-title {
   color: black;
@@ -668,7 +665,7 @@ img {
 /* responsive media */
 @media screen and (max-width: 1024px) {
   .images__container {
-    padding: 0 9rem;
+    padding: 5rem 9rem;
   }
 }
 
@@ -685,17 +682,13 @@ img {
     padding: 13rem 1rem;
   }
 
-  .hero__title {
-   /* margin-top: 2em;*/
-  }
-
-  .images {
-/*    padding: 3rem 1rem;*/
-  }
-
   .images__container .image-box{
     max-height: 120px;
     max-width: 79px;
+  }
+
+  .images__title {
+    margin-top: 4rem;
   }
 
   .affirmation-bottom {
@@ -723,28 +716,14 @@ img {
     padding: 0.5rem;
   }
 
-  .logo-content img {
-    /*width: 26%;*/
+  .images__container {
+    margin-bottom: 2rem;
   }
-
-
-  /* Hero */
-
-  .hero__btn {
-    /*
-    font-size: 1rem !important;
-    */
-    padding: 1rem 1rem;
-  }
-
-  /* blog */
 
   /* about */
   .about p {
     font-size: 1rem;
   }
-
-  /* contact */
 
   /* privacy */
   .privacy h3 {
@@ -771,13 +750,6 @@ img {
   /* footer */
   .contact-content {
     flex-basis: 6%;
-  }
-
-  .motivation-btn {
-    /*
-    font-size: var(--smaller-font);
-    padding: 1rem 2rem;
-    */
   }
 
   .menuItem-price {
