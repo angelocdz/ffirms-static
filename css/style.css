@@ -209,6 +209,7 @@ a {
 }
 
 .nav-link {
+  font-family: 'Open Sans', sans-serif;
   color: var(--white-color);
   font-size: 2rem;
   position: relative;
@@ -484,6 +485,7 @@ img {
 }
 
 .footer__link {
+  font-family: Arial, sans-serif;
   color: var(--text-color-light);
   font-size: 1.2rem;
 }
@@ -503,6 +505,7 @@ img {
 }
 
 .footer__copy-r {
+  font-family: Arial, sans-serif;
   padding-top: 1rem;
   max-width: 970px;
   margin: 0 auto;
