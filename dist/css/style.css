@@ -93,7 +93,7 @@ a {
 }
 
 /* sr */
-.image-box,
+.images__box,
 .affirmation,
 .motivation,
 .snippet,
@@ -110,7 +110,7 @@ a {
 }
 
 /* center */
-.text-center {
+.center {
   text-align: center;
 }
 
@@ -189,7 +189,6 @@ a {
 }
 
 .logo-content img {
-  /*width: 13%;*/
   width: 16%;
 }
 
@@ -362,6 +361,14 @@ img {
 }
 
 /* IMAGES */
+.images__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4rem 13rem;
+}
+
 .images__title {
   font-size: 4rem;
   margin-top: 2rem;
@@ -374,6 +381,26 @@ img {
   margin-bottom: 3rem;
   margin-left: 4rem;
   margin-right: 4rem;
+}
+
+.images__container .images__box{
+  position: relative;
+  max-height: 230px;
+  max-width: 160px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.images__container .images__box a img{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.2s linear;
+}
+
+.images__box:hover a img{
+  transform: scale(1.05);
 }
 
 
@@ -546,34 +573,6 @@ img {
 }
 
 
-/* IMAGES */
-.images__container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 4rem 13rem;
-}
-
-.images__container .image-box{
-  position: relative;
-  max-height: 230px;
-  max-width: 160px;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 8px;
-}
-
-.images__container .image-box a img{
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
-  transition: transform 0.2s linear;
-}
-
-.image-box:hover a img{
-  transform: scale(1.05);
-}
 
 /* Affirmation */
 .affirmation-title {
@@ -665,7 +664,7 @@ img {
     padding: 13rem 1rem;
   }
 
-  .images__container .image-box{
+  .images__container .images__box{
     max-height: 120px;
     max-width: 79px;
   }

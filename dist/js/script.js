@@ -45,4 +45,4 @@ const sr = ScrollReveal({
   delay: 400,
 })
 
-sr.reveal(`.image-box, .footer__link-container, .footer__socials, .footer__copy-r, .affirmation, .motivation, .snippet, .about, .contact, .privacy, .terms`, { interval:100, origin:'bottom'})
+sr.reveal(`.images__title, .images__txt, .images__box, .footer__link-container, .footer__socials, .footer__copy-r, .affirmation, .motivation, .snippet, .about, .contact, .privacy, .terms`, { interval:100, origin:'bottom'})
