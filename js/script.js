@@ -1,4 +1,4 @@
-// Nav open close
+// NAV OPEN CLOSE
 const body = document.querySelector('body'),
   navMenu = body.querySelector('.menu-content'),
   navOpenBtn = body.querySelector('.navOpen-btn'),
@@ -18,7 +18,7 @@ if(navMenu && navCloseBtn) {
   })
 }
 
-// Change header bg color
+// CHANGE HEADER BG COLOR
 window.addEventListener("scroll", () => {
   const scrollY = window.pageYOffset;
 
@@ -27,40 +27,17 @@ window.addEventListener("scroll", () => {
   } else {
     document.querySelector("header").classList.remove("header-active")
   }
-  // console.log(scrollY)
 
-  // Scroll up button
+  // SCROLL UP BUTTON
   const scrollUpBtn = document.querySelector('.scrollUp-btn');
   if(scrollY > 250) {
     scrollUpBtn.classList.add("scrollUpBtn-active");
   } else {
     scrollUpBtn.classList.remove("scrollUpBtn-active");
   }
-
-  // Nav link indicator
-  const sections = document.querySelectorAll('section[id]');
-
-  sections.forEach(section => {
-    const sectionHeight = section.offsetHeight,
-          sectionTop = section.offsetTop - 60;
-    let navId = document.querySelector(`.menu-content a[href*= '${section.id}']`);
-    // console.log(navId)
-
-    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      navId.classList.add("active-navlink")
-    } else {
-      navId.classList.remove("active-navlink");
-    }
-
-    navId.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-      body.style.overflowY = "scroll";
-    })
-  })
-  // console.log(sections)
 })
 
-// Scroll Reveal Animation
+// SCROLL REVEAL ANIMATION
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
@@ -68,5 +45,4 @@ const sr = ScrollReveal({
   delay: 400,
 })
 
-sr.reveal(`.image-box, .affirmation, .motivation, .snippet, .about, .contact, .privacy, .terms`, { interval:100, origin:'bottom'})
-sr.reveal(`.footer-btns, .footer-socials, .footer-copyRight`, {origin: 'top'})
+sr.reveal(`.image-box, .footer__link-container, .footer__socials, .footer__copy-r, .affirmation, .motivation, .snippet, .about, .contact, .privacy, .terms`, { interval:100, origin:'bottom'})

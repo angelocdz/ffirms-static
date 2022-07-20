@@ -193,10 +193,6 @@ a {
   width: 16%;
 }
 
-.nav-link {
-  color: var(--white-color);
-  font-size: 2rem;
-}
 
 .header-active .nav-link {
   color: var(--text-color);
@@ -213,8 +209,9 @@ a {
 }
 
 .nav-link {
+  color: var(--white-color);
+  font-size: 2rem;
   position: relative;
-  /*text-transform: capitalize;*/
 }
 
 .nav-link::after,
@@ -224,7 +221,7 @@ a {
 
 .nav-link::after {
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   right: 0;
   margin: auto;
@@ -232,30 +229,11 @@ a {
   content: '.';
   color: transparent;
   background: #aaa;
-  height: 2px;
+  height: 1px;
 }
 
 .nav-link:hover:after {
   width: 100%;
-}
-
-.nav-link::before {
-  /*
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -8px;
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  background-color: var(--white-color);
-  opacity: 0;
-  */
-}
-
-.active-navlink::before {
-  /*opacity: 1;*/
 }
 
 .header-active .active-navlink::before {
@@ -494,42 +472,42 @@ img {
   }
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
-  padding: 4rem 2rem 3rem;
+  padding: 2rem;
   background-color: var(--section-bg);
 }
 
-.footer-btns {
+.footer__link-container {
   justify-content: center;
   column-gap: 3rem;
 }
 
-.footer-btns .nav-btn {
+.footer__link {
   color: var(--text-color-light);
+  font-size: 1.2rem;
 }
 
-.footer-socials {
-  padding-top: 3rem;
-  margin-top: 3rem;
-  border-top: 2px solid var(--text-color-light);
+.footer__socials {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--text-color-light);
   display: flex;
   column-gap: 1rem;
   justify-content: center;
 }
 
-.footer-socials a {
+.footer__socials a {
   color: var(--text-color-light);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-
-.footer-copyRight {
+.footer__copy-r {
   padding-top: 1rem;
   max-width: 970px;
   margin: 0 auto;
   text-align: center;
-  font-size: var(--small-font);
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -708,7 +686,7 @@ img {
     row-gap: 1.5rem;
   }
 
-  .footer-btns {
+  .footer__link-container {
     flex-direction: column;
   }
 }
