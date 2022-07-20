@@ -375,10 +375,11 @@ img {
 }
 
 .hero__btn {
-  font-size: var(--h2-font);
+  /*font-size: var(--h2-font);*/
   font-weight: 700;
   margin-bottom: 2em;
   font-size: 2rem;
+  padding: 1.7rem 8rem;
 }
 
 /* IMAGES */
@@ -718,7 +719,7 @@ img {
   }
 
   .images__container {
-    padding: 0 9rem !important;
+    padding: 0 5rem !important;
   }
 
   /* about */
@@ -783,8 +784,10 @@ img {
 
   .hero__btn {
     font-size: 1.6rem;
+    padding: 1.3rem 4rem;
   }
 
+  /* IMAGES */
   .images__container {
     padding: 0.5rem !important;
   }
