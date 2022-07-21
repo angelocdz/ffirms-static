@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivation</title>
+    <title>FFirms</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/scrollreveal.min.js">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Navigation -->
+<!-- HEADER -->
   <header class="header">
-    <nav class="nav container">
-      <div class="contact-content flex">
-      </div>
-      <a href="index.html" class="logo-content flex"><img src="./images/logo.png" alt="FFirms - Home"></a>
-      <div class="menu-content">
-        <ul class="menu-list flex">
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <nav class="header__nav container">
+      <div class="header__blank flex"></div>
+      <a class="header__logo flex" href="index.html" ><img src="./images/logo.png" alt="FFirms - Home"></a>
+      <div class="header__menu">
+        <ul class="header__ul flex">
+          <li><a href="blog.html" class="header__link">Blog</a></li>
+          <li><a href="about.html" class="header__link">About</a></li>
+          <li><a href="contact.html" class="header__link">Contact</a></li>
         </ul>
-        <div class="media-icons flex">
+        <div class="header__socials flex">
           <a href="https://www.facebook.com"><i class="bx bxl-facebook"></i></a>
           <a href="https://twitter.com/i/flow/login"><i class="bx bxl-twitter"></i></a>
           <a href="https://www.instagram.com/accounts/login"><i class="bx bxl-instagram-alt"></i></a>
         </div>
-        <i class="bx bx-x navClose-btn"></i>
+        <i class="bx bx-x header__close"></i>
       </div>
-      <i class="bx bx-menu navOpen-btn"></i>
+      <i class="bx bx-menu header__open"></i>
     </nav>
   </header>
 <!-- HERO -->
@@ -60,26 +62,24 @@
       </div>
     </section>
   </main>
-<!-- Footer -->
-  <footer class="section footer">
-    <ul class="footer-btns flex">
-      <li><a href="blog.html" class="nav-btn nav-link">Blog</a></li>
-      <li><a href="about.html" class="nav-btn nav-link">About</a></li>
-      <li><a href="privacy.html" class="nav-btn nav-link">Privacy Policy</a></li>
-      <li><a href="terms.html" class="nav-btn nav-link">Terms &#38; Conditions</a></li>
-      <li><a href="contact.html" class="nav-btn nav-link">Contact</a></li>
+<!-- FOOTER -->
+  <footer class="footer">
+    <ul class="footer__link-container flex">
+      <li><a href="blog.html" class="footer__link header__link">Blog</a></li>
+      <li><a href="about.html" class="footer__link header__link">About</a></li>
+      <li><a href="privacy.html" class="footer__link header__link">Privacy Policy</a></li>
+      <li><a href="terms.html" class="footer__link header__link">Terms &#38; Conditions</a></li>
+      <li><a href="contact.html" class="footer__link header__link">Contact</a></li>
     </ul>
-    <div class="footer-socials flex">
+    <div class="footer__socials flex">
       <a href="https://www.facebook.com"><i class="bx bxl-facebook"></i></a>
       <a href="https://twitter.com/i/flow/login"><i class="bx bxl-twitter"></i></a>
       <a href="https://www.instagram.com/accounts/login"><i class="bx bxl-instagram-alt"></i></a>
     </div>
-    <div class="footer-copyRight">&#169; 2022 | FFirms | All Rights Reserved</div>
+    <div class="footer__copy-r">&#169; 2022 | FFirms | All Rights Reserved</div>
   </footer>
 <!-- Scroll Up -->
-  <a href="#hero" class="scrollUp-btn flex">
-    <i class="bx bx-up-arrow-alt scrollUp-icon"></i>
-  </a>
+  <a href="#hero" class="scrollUp-btn flex"><i class="bx bx-up-arrow-alt scrollUp-icon"></i></a>
   <script src="js/scrollreveal.js"></script>
   <script src="js/script.js"></script>
 </body>

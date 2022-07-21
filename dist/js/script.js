@@ -1,8 +1,8 @@
-// NAV OPEN CLOSE
+// HEADER OPEN CLOSE
 const body = document.querySelector('body'),
-  navMenu = body.querySelector('.menu-content'),
-  navOpenBtn = body.querySelector('.navOpen-btn'),
-  navCloseBtn = navMenu.querySelector('.navClose-btn');
+  navMenu = body.querySelector('.header__menu'),
+  navOpenBtn = body.querySelector('.header__open'),
+  navCloseBtn = navMenu.querySelector('.header__close');
 
 if(navMenu && navOpenBtn) {
   navOpenBtn.addEventListener('click', () => {
@@ -23,9 +23,9 @@ window.addEventListener("scroll", () => {
   const scrollY = window.pageYOffset;
 
   if(scrollY > 5) {
-    document.querySelector("header").classList.add("header-active")
+    document.querySelector("header").classList.add("header__active")
   } else {
-    document.querySelector("header").classList.remove("header-active")
+    document.querySelector("header").classList.remove("header__active")
   }
 
   // SCROLL UP BUTTON
