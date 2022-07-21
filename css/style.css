@@ -254,7 +254,7 @@ img {
   background: url("../images/hero1.jpg") rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   padding: 26rem 2rem;
   object-fit: cover;
 }
@@ -324,6 +324,11 @@ img {
 }
 
 /* AFFIRMATION */
+.hero__affir {
+  background: url("../images/hero2.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+}
+
 .hero__affir-container {
   row-gap: 2rem;
 }
@@ -361,20 +366,20 @@ img {
 
 .affir__h-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 1fr 2fr;
   column-gap: 1rem;
   align-items: center;
 }
 
 .affir__h-img-container {
-  max-width: 230px;
-  height: 333px;
+  max-width: 233px;
+  height: 300px;
   margin: 0 auto;
 }
 
 .affir__h-div-arrow {
   background: #bbb;
-  padding: 3.3rem 3.5rem;
+  padding: 3rem 5rem;
   position: relative;
   z-index: 11;
 }
