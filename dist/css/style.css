@@ -58,9 +58,11 @@ html {
     --small-font: 1.3rem;
     --smaller-font: 1.2rem;
 
+    /*
     --fs-2-5: 2rem;
     --fs-2: 1.5rem;
     --fs-3: 2.5rem;
+    */
   }
 }
 
@@ -439,6 +441,7 @@ img {
   font-size: var(--fs-2);
   margin-top: 1em;
   text-align: justify;
+  line-height: 1.3;
 }
 
 .affir__txt-container h3 {
@@ -636,11 +639,6 @@ img {
     margin-bottom: 2rem;
   }
 
-  .affir__h-img-container {
-    max-width: 156px;
-    height: 200px;
-  }
-
   .affir__h-div-arrow {
     padding: 3rem 4rem;
   }
@@ -663,6 +661,11 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .affir__h-img-container {
+    max-width: 156px;
+    height: 200px;
+  }
+
   .section {
     padding: 7rem 1rem;
   }
