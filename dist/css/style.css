@@ -380,8 +380,10 @@ img {
   max-width: 30%;
 }
 
-.affirmation-action {
-  color: red;
+.affir__txt-actionable {
+  pointer-events: none;
+  background-color: #027759;
+  padding: 3rem 4rem;
 }
 
 .affir__h-container {
@@ -799,6 +801,7 @@ img {
     padding: 0 5rem;
   }
 
+  /* AFFIRMATION */
   .affir__txt-container {
     padding: 5rem 3rem;
   }
@@ -812,6 +815,10 @@ img {
     width: 30px;
     height: 30px;
     margin-top: -15px;
+  }
+
+  .affir__txt-actionable {
+    padding: 1rem 2rem;
   }
 
   /* ABOUT */
