@@ -452,6 +452,29 @@ img {
   margin-top: 1em;
 }
 
+.affir__moti-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4rem 1rem;
+}
+
+.affir__moti-card {
+  position: relative;
+  max-height: 230px;
+  max-width: 160px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.affir__moti-card a img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+
 /* BLOG */
 .blog {
   /* padding: 3rem 3rem; */
