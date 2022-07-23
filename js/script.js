@@ -47,7 +47,7 @@ const sr = ScrollReveal({
 
 sr.reveal(`.images__title, .images__txt, .images__box, .footer__link-container, .footer__socials, .footer__copy-r, .affirmation, .motivation, .snippet, .about, .contact, .privacy, .terms`, { interval:100, origin:'bottom'})
 
-VanillaTilt.init(document.querySelectorAll(".affir__moti-card"), {
+VanillaTilt.init(document.querySelectorAll(".affir__moti-img-container"), {
   max: 25,
   speed: 400,
   glare: true,
