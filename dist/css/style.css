@@ -452,27 +452,25 @@ img {
   margin-top: 1em;
 }
 
-.affir__moti-card-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 4rem 1rem;
+.affir__moti {
+  background-color: #2C3B44;
+  padding: 6rem 0;
 }
 
-.affir__moti-card {
-  position: relative;
-  max-height: 230px;
-  max-width: 160px;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 8px;
+.affir__moti-h2 {
+  font-size: 4rem;
+  color: white;
 }
 
-.affir__moti-card a img {
-  height: 100%;
-  width: 100%;
-  border-radius: 6px;
+.affir__moti-img-container {
+  width: 254px;
+  height: 269px;
+  margin: 3rem auto;
+}
+
+.affir__moti-btn {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 /* BLOG */
@@ -844,6 +842,11 @@ img {
     padding: 1rem 2rem;
   }
 
+  .affir__moti-btn {
+    font-size: 1.3rem;
+    padding: 1.4rem 1.3rem;
+  }
+
   /* ABOUT */
   .about p {
     font-size: 1rem;
@@ -889,6 +892,10 @@ img {
   }
 
   .images__title {
+    font-size: 2.2rem;
+  }
+
+  .affir__moti-h2 {
     font-size: 2.2rem;
   }
 
