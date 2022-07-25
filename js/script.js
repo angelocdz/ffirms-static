@@ -50,6 +50,4 @@ sr.reveal(`.images__title, .images__txt, .images__box, .footer__link-container, 
 VanillaTilt.init(document.querySelectorAll(".affir__moti-img-container"), {
   max: 25,
   speed: 400,
-  glare: true,
-  "max-glare": 1,
 });
