@@ -173,6 +173,7 @@ img {
   margin-top: var(--flow-spacer, 3em);
 }
 
+
 /* HEADER */
 .header {
   position: fixed;
@@ -358,11 +359,6 @@ img {
   background-size: cover;
 }
 
-.hero__affir-container {
-  row-gap: 2rem;
-}
-
-
 .affirmation-title {
   margin-bottom: 5rem;
   text-align: center;
@@ -420,7 +416,7 @@ img {
 }
 
 .affir__h-header {
-  font-size: var(--fs-2-5);
+  font-size: var(--fs-3);
 }
 
 .affir__h-sub-header {
@@ -467,6 +463,18 @@ img {
 .affir__moti-btn {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.hero__moti {
+  background: url("../images/hero3.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center right;
+}
+
+/* MOTIVATION */
+
+.hero__gap-2-title {
+  row-gap: 2rem;
 }
 
 /* BLOG */
