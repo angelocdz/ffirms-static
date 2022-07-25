@@ -290,7 +290,16 @@ img {
   color: var(--white-color);
   font-weight: 700;
   line-height: 1.2;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
+  text-shadow: 1px 1px 6px #000;
+}
+
+.hero__title-2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #FFFF00;
+  font-style: italic;
+  text-shadow: 1px 1px 6px #000;
 }
 
 .hero__btn {
@@ -353,19 +362,6 @@ img {
   row-gap: 2rem;
 }
 
-.hero__affir-hero {
-  font-size: 5.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 6px #000;
-}
-
-.hero__affir-title {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #FFFF00;
-  font-style: italic;
-  text-shadow: 1px 1px 6px #000;
-}
 
 .affirmation-title {
   margin-bottom: 5rem;
@@ -767,6 +763,10 @@ img {
     padding: 13rem 1rem;
   }
 
+  .hero__title {
+    font-size: 4.5rem;
+  }
+
   /* IMAGES */
   .images__container {
     padding: 0 10rem;
@@ -816,6 +816,7 @@ img {
   .header__blank {
     flex-basis: 6%;
   }
+
 
   /* IMAGES */
   .images__container {
@@ -877,9 +878,6 @@ img {
 
 @media screen and (max-width: 479px) {
   /* HERO */
-  .hero__title {
-    font-size: 2.5rem;
-  }
 
   .hero__btn {
     font-size: 1.6rem;
