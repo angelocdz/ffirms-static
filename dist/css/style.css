@@ -463,8 +463,8 @@ img {
 }
 
 .affir__moti-img-container {
-  width: 254px;
-  height: 269px;
+  width: 150px;
+  height: 133px;
   margin: 3rem auto;
 }
 
@@ -892,10 +892,6 @@ img {
   }
 
   .images__title {
-    font-size: 2.2rem;
-  }
-
-  .affir__moti-h2 {
     font-size: 2.2rem;
   }
 
