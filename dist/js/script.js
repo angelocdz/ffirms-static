@@ -45,7 +45,9 @@ const sr = ScrollReveal({
   delay: 400,
 })
 
-sr.reveal(`.images__title, .images__txt, .images__box, .footer__link-container, .footer__socials, .footer__copy-r, .affirmation, .motivation, .snippet, .about, .contact, .privacy, .terms`, { interval:100, origin:'bottom'})
+sr.reveal(`.images__title, .images__txt, .images__box, .motivation, .snippet, .about, .contact, .privacy, .terms`, {interval:100, origin:'bottom'})
+sr.reveal(`.affir__h-container, .content-container`, {interval:100, origin:'bottom'})
+sr.reveal(`.footer__link-container, .footer__socials, .footer__copy-r, .affir__txt-actionable, .affir__moti`, {origin:'bottom'})
 
 VanillaTilt.init(document.querySelectorAll(".affir__moti-img-container"), {
   max: 25,
