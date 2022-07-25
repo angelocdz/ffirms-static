@@ -5,7 +5,6 @@ html {
 
 /* VARIABLES */
 :root {
---body-font: 'Merriweather', serif;
 --big-font: 6rem;
 --h1-font: 3.6rem;
 --h2-font: 2.4rem;
@@ -15,25 +14,29 @@ html {
 --small-font: 1.4rem;
 --smaller-font: 1.3rem;
 
---fs-5-5: 5.5rem;
---fs-4: 4rem;
---fs-2-5: 2.5rem;
 --fs-2: 2rem;
 --fs-3: 3rem;
 
+--fs-5-5: 5.5rem;
+--fs-4: 4rem;
+--fs-2-5: 2.5rem;
+
 
 /* FONT WEIGHT */
+/*
 --font-regular: 400;
 --font-medium: 500;
 --font-semi-bold: 600;
+*/
 
 /* COLOR VARIABLES */
+--text-color: #333;
+--white-color: #fff;
 --primary-color: #c87e4f;
 --primary-color-hover: #c2703d;
---text-color: #333;
+
 --text-color-light: #888682;
 --border-color: #484848;
---white-color: #fff;
 --section-bg: #2c3034;
 
 /* Z-INDEX */
@@ -57,19 +60,6 @@ html {
     --normal-font: 1.5rem;
     --small-font: 1.3rem;
     --smaller-font: 1.2rem;
-
-    /*
-    --fs-2-5: 2rem;
-    --fs-2: 1.5rem;
-    --fs-3: 2.5rem;
-    */
-  }
-}
-
-@media screen and (max-width: 767px) {
-  :root {
-    --fs-5-5: 4.5rem;
-    --fs-4: 3.5rem;
   }
 }
 
@@ -84,10 +74,10 @@ html {
 body,
 button,
 input {
-  font-family: var(--body-font);
-  font-size: var(--normal-font);
-  font-weight: var(--font-regular);
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
   color: var(--text-color);
+  line-height: 1.3;
 }
 
 body {
@@ -111,6 +101,12 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  margin-top: 1em;
+  text-align: justify;
 }
 
 /* sr */
@@ -171,6 +167,15 @@ img {
 
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 3em);
+}
+
+.content-container {
+  padding: 5rem 18rem;
+}
+
+.content-container h3 {
+  font-size: var(--fs-3);
+  margin-top: 1em;
 }
 
 
@@ -412,37 +417,10 @@ img {
   background-color: white;
 }
 
-.affir__h-txt-container {
-}
-
 .affir__h-header {
   font-size: var(--fs-3);
 }
 
-.affir__h-sub-header {
-  font-family: Arial, sans-serif;
-  font-size: var(--fs-2);
-  line-height: 1.3;
-  text-align: justify;
-}
-
-.affir__txt-container {
-  padding: 5rem 18rem;
-}
-
-.affir__txt-container p {
-  font-family: Arial, sans-serif;
-  font-size: var(--fs-2);
-  margin-top: 1em;
-  text-align: justify;
-  line-height: 1.3;
-}
-
-.affir__txt-container h3 {
-  font-size: var(--fs-3);
-  font-weight: bold;
-  margin-top: 1em;
-}
 
 .affir__moti {
   background-color: #2C3B44;
@@ -475,6 +453,45 @@ img {
 
 .hero__gap-2-title {
   row-gap: 2rem;
+}
+
+.motivation {
+  text-align: center;
+}
+
+.motivation h2 {
+  margin-bottom: 5rem;
+  font-size: 3.5rem;
+}
+
+.motivation__img {
+  width: 150px;
+  height: 133px;
+  margin: 3rem auto;
+}
+
+.motivation__images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+.motivation__images div{
+  position: relative;
+  max-width: 139px;
+  max-height: 193px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.motivation__images div a img{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.2s linear;
 }
 
 /* BLOG */
@@ -670,7 +687,11 @@ img {
     padding: 3rem 4rem;
   }
 
-  .affir__txt-container {
+  .content-container {
+    padding: 5rem 13rem;
+  }
+
+  .motivation__container {
     padding: 5rem 13rem;
   }
 }
@@ -688,6 +709,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .affir h3 {
+    text-align: center;
+  }
+
   .affir__h-img-container {
     max-width: 156px;
     height: 200px;
@@ -801,12 +826,15 @@ img {
     left: 46%;
   }
 
-  .affir__txt-container {
+  .content-container {
     padding: 5rem 3rem;
   }
 
-  .affir__txt-container h3 {
-    text-align: center;
+  /* MOTIVATION */
+
+  .motivation__images div {
+    max-height: 120px;
+    max-width: 79px;
   }
 
   /* FOOTER */
@@ -818,6 +846,10 @@ img {
 @media screen and (max-width: 600px) {
   .container {
     padding: 0.5rem;
+  }
+
+  .content-container {
+    padding: 5rem 3rem;
   }
 
   /* HEADER */
@@ -832,9 +864,6 @@ img {
   }
 
   /* AFFIRMATION */
-  .affir__txt-container {
-    padding: 5rem 3rem;
-  }
 
   .affir__h-div-arrow {
     padding: 2rem 2rem;
@@ -885,6 +914,10 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  .content-container {
+    padding: 3rem 0.5rem;
+  }
+
   /* HERO */
 
   .hero__btn {
@@ -905,9 +938,6 @@ img {
     font-size: 1.6rem;
   }
 
-  .affir__txt-container {
-    padding: 3rem 0.5rem;
-  }
 
   /* FOOTER */
   .footer__link-container {

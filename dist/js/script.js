@@ -51,3 +51,8 @@ VanillaTilt.init(document.querySelectorAll(".affir__moti-img-container"), {
   max: 25,
   speed: 400,
 });
+
+VanillaTilt.init(document.querySelectorAll(".motivation__images__img"), {
+  max: 25,
+  speed: 400,
+});
