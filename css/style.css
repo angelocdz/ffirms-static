@@ -553,18 +553,13 @@ p {
 }
 
 /* PRIVACY */
-.privacy{
-  font-size: 2rem;
+.privacy ul {
+  list-style: disc;
+  margin: 0 3rem;
 }
 
-.privacy-title {
-  color: black;
-  text-align: center;
-  font-size: 6rem;
-}
-
-.privacy-flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 1em);
+.privacy h3 {
+  margin-top: 5rem;
 }
 
 /* TERMS */
