@@ -561,8 +561,9 @@ p {
 }
 
 /* TERMS */
-.terms{
-  font-size: 2rem;
+.terms h3 {
+  font-size: 3rem;
+  margin-top: 5rem;
 }
 
 /* SCROLL UP */
