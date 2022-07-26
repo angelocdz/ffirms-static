@@ -548,17 +548,15 @@ p {
   height: 13rem;
 }
 
-.contact-btn {
-  margin: auto;
-}
-
 /* PRIVACY */
 .privacy ul {
   list-style: disc;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
+  line-height: 1.6;
 }
 
 .privacy h3 {
+  font-size: 3rem;
   margin-top: 5rem;
 }
 
@@ -660,6 +658,10 @@ p {
 
 .about__container {
   padding: 0 12rem;
+}
+
+.about__container p {
+  margin-bottom: 3rem;
 }
 
 
@@ -884,29 +886,6 @@ p {
     font-size: 1.3rem;
     padding: 1.4rem 1.3rem;
   }
-
-
-  /* PRIVACY */
-  .privacy h3 {
-    font-size: 2rem;
-  }
-
-  .privacy p {
-    font-size: 1rem;
-  }
-
-  .privacy ul li {
-    font-size: 1rem;
-  }
-
-  /* TERMS */
-  .terms h3 {
-    font-size: 2rem;
-  }
-
-  .terms p {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 479px) {
@@ -915,7 +894,6 @@ p {
   }
 
   /* HERO */
-
   .hero__btn {
     font-size: 1.6rem;
     padding: 1.3rem 4rem;
@@ -927,7 +905,7 @@ p {
   }
 
   .images__title {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   .images__txt {
@@ -935,7 +913,7 @@ p {
   }
 
   .affirmation__title a {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
   }
 
   .affirmation__body {
@@ -949,5 +927,27 @@ p {
   /* FOOTER */
   .footer__link-container {
     flex-direction: column;
+  }
+
+  /* PRIVACY */
+  .privacy h3 {
+    font-size: 2.3rem;
+  }
+
+  .privacy p {
+    font-size: 1.6rem;
+  }
+
+  .privacy ul li {
+    font-size: 1.6rem;
+  }
+
+  /* TERMS */
+  .terms h3 {
+    font-size: 2.3rem;
+  }
+
+  .terms p {
+    font-size: 1.6rem;
   }
 }
